@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dnt.Kafka.Core", "Dnt.Kafka.Core\Dnt.Kafka.Core.csproj", "{24DEEBAE-F6D2-42CB-B154-74D87AFBABDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dnt.Kafka.Core.Tests", "Dnt.Kafka.Core.Tests\Dnt.Kafka.Core.Tests.csproj", "{471EA1DC-09FE-4D29-9C56-015E7A8E341F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dnt.Kafka.Console.Producer", "Dnt.Kafka.Console.Producer\Dnt.Kafka.Console.Producer.csproj", "{6F675319-928C-4C16-AF5C-CC82B32E8AEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dnt.Kafka.Console.Consumer", "Dnt.Kafka.Console.Consumer\Dnt.Kafka.Console.Consumer.csproj", "{F665ABB8-749D-4839-ADC7-227F5A122AAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24DEEBAE-F6D2-42CB-B154-74D87AFBABDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DEEBAE-F6D2-42CB-B154-74D87AFBABDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DEEBAE-F6D2-42CB-B154-74D87AFBABDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DEEBAE-F6D2-42CB-B154-74D87AFBABDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{471EA1DC-09FE-4D29-9C56-015E7A8E341F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{471EA1DC-09FE-4D29-9C56-015E7A8E341F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{471EA1DC-09FE-4D29-9C56-015E7A8E341F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{471EA1DC-09FE-4D29-9C56-015E7A8E341F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F675319-928C-4C16-AF5C-CC82B32E8AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F675319-928C-4C16-AF5C-CC82B32E8AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F675319-928C-4C16-AF5C-CC82B32E8AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F675319-928C-4C16-AF5C-CC82B32E8AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F665ABB8-749D-4839-ADC7-227F5A122AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F665ABB8-749D-4839-ADC7-227F5A122AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F665ABB8-749D-4839-ADC7-227F5A122AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F665ABB8-749D-4839-ADC7-227F5A122AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3EFB3FC0-4676-4C9E-917D-4FE936E29BD2}
+	EndGlobalSection
+EndGlobal
