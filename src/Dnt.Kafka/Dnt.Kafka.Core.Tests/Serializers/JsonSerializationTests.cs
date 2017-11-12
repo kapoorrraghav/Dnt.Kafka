@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Dnt.Kafka.Core.Tests.Serializers
 {
-    public class AvroSerializationTests
+    public class JsonSerializationTests
     {
         [Theory]
         [InlineData(new byte[0])]
@@ -13,8 +13,8 @@ namespace Dnt.Kafka.Core.Tests.Serializers
         [InlineData(new byte[] { 1, 2, 3, 4, 5 })]
         public void ShouldReconstructByteArray(byte[] data)
         {
-            var sut1 = new AvroSerializer<byte[]>();
-            var sut2 = new AvroDeserializer<byte[]>();
+            var sut1 = new JsonSerializer<byte[]>();
+            var sut2 = new JsonDeserializer<byte[]>();
 
             Assert.Equal(data, sut2.Deserialize(sut1.Serialize(data)));
         }
@@ -24,8 +24,8 @@ namespace Dnt.Kafka.Core.Tests.Serializers
         {
             var data = DataGenerator.CreateTestMessage();
 
-            var sut1 = new AvroSerializer<TestMessage>();
-            var sut2 = new AvroDeserializer<TestMessage>();
+            var sut1 = new JsonSerializer<TestMessage>();
+            var sut2 = new JsonDeserializer<TestMessage>();
 
             Assert.True(data.JsonComapre(sut2.Deserialize(sut1.Serialize(data))));
         }
@@ -33,7 +33,7 @@ namespace Dnt.Kafka.Core.Tests.Serializers
         [Fact]
         public void ShouldThrowExceptionOnSerializeNullData()
         {
-            var sut = new AvroSerializer<TestMessage>();
+            var sut = new JsonSerializer<TestMessage>();
 
             Assert.Throws<ArgumentNullException>(() => sut.Serialize(null));
         }
@@ -41,7 +41,7 @@ namespace Dnt.Kafka.Core.Tests.Serializers
         [Fact]
         public void ShouldThrowExceptionOnDeserializeNullData()
         {
-            var sut = new AvroDeserializer<TestMessage>();
+            var sut = new JsonDeserializer<TestMessage>();
 
             Assert.Throws<ArgumentNullException>(() => sut.Deserialize(null));
         }

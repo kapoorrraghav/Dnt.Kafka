@@ -5,10 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Faker.Net" Version="1.0.3" />
-    <PackageReference Include="NBuilder" Version="5.0.0" />
-    <PackageReference Include="xunit" Version="2.3.0-rc3-build3818" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.0-rc3-build3818" />
+    <PackageReference Include="Microsoft.Avro.Core" Version="0.1.0" />
+    <PackageReference Include="NSubstitute" Version="3.1.0" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dnt.Kafka.Core\Dnt.Kafka.Core.csproj" />
+    <ProjectReference Include="..\Dnt.Kafka.Tests.Core\Dnt.Kafka.Tests.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Consumers\" />
   </ItemGroup>
 
 </Project>
